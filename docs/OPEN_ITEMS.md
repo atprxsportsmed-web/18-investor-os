@@ -19,3 +19,8 @@
 - Update the older business plan documents (see RESOURCES.md) to the current model.
 - Sign-up pace multiplier 0.8 for the $500 price is a guess to test in pre-opening conversations.
 - PT/rehab partner: consider a conversation with the local TPI PT after an NDA (non-exclusive, per-session, same 80/20 or referral terms).
+
+- Rent figure for flex industrial space (still $12/sq ft placeholder)
+- Quotes: tower, weights, cardio, build-out; formal insurance quote (property coverage not in the $185)
+- Tonal recurring subscription, if any, is not priced
+- Tranche logic remains in the model (Sources and uses); deck no longer shows it. Decide whether to remove from the workbook.

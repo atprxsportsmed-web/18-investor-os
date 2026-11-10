@@ -16,7 +16,7 @@ cases=[
  ("Paid add-on take-up halved (S&C, lessons, junior packages)",lambda A:scale(A,["B70","B76","B94","B95","B96"],0.5)),
  ("Rent 50% higher ($18/sq ft)",lambda A:A.__setitem__("B27",18)),
  ("Build-out cost doubled ($40/sq ft)",lambda A:A.__setitem__("B29",40)),
- ("Insurance doubled ($1,600/month)",lambda A:A.__setitem__("B40",1600)),
+ ("Insurance doubled ($370/month)",lambda A:A.__setitem__("B40",370)),
  ("Add hourly floor staff (one 7-hour shift, 7 days)",lambda A:A.__setitem__("B157",7)),
  ("No part-time hire (owner covers the floor for all 60 months)",lambda A:A.__setitem__("B161",0)),
  ("Part-time hire works 30 hours a week",lambda A:A.__setitem__("B162",30)),

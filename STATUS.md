@@ -15,3 +15,6 @@
 - Get real quotes and the insurance figure into `model/stage1.xlsx`, rebuild, update slides.
 - Attorney reviews (names, IP, offering).
 - Then: investor-ready pass, then dry run of the pitch.
+
+## Update Nov 10
+Model and slides 6, 9-14 updated for new equipment/insurance inputs. Staged funding removed from deck; slide 11 rows merged. Next: rent, quotes, names, attorney review.
