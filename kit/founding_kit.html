@@ -1,0 +1,131 @@
+<title>Founding Member Kit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap">
+<style>
+/* Layout: two letter-size sheets stacked on a quiet ground — offer sheet, then team page. Fairway-green ink on cool paper. */
+:root{
+  --ground:#E4E8E5; --paper:#FBFCFB; --ink:#14231D; --muted:#55645D; --rule:#C9D1CC;
+  --green:#1F5A43; --green-soft:#E3EEE8; --flag:#8A5A00; --flag-bg:#FFF3D6;
+  --display:"Barlow Condensed","Arial Narrow",sans-serif; --body:"Source Sans 3",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ground:#0B1411; --paper:#13211C; --ink:#EAF0EC; --muted:#9DB0A6; --rule:#2A3D35;
+  --green:#6FCB9F; --green-soft:#1B3328; --flag:#F0C46A; --flag-bg:#3A2E10; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ground:#0B1411; --paper:#13211C; --ink:#EAF0EC; --muted:#9DB0A6; --rule:#2A3D35;
+  --green:#6FCB9F; --green-soft:#1B3328; --flag:#F0C46A; --flag-bg:#3A2E10; color-scheme:dark}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;
+  padding-block:24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.sheet{background:var(--paper);max-width:816px;margin:0 auto 28px;padding:clamp(20px,5vw,56px);border:1px solid var(--rule)}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.04em;margin:0;text-wrap:balance;line-height:1.05}
+h1{font-size:clamp(40px,8vw,64px);font-weight:700}
+h2{font-size:22px;font-weight:600;color:var(--green);margin-bottom:10px}
+h3{font-size:24px;font-weight:600}
+.tag{font-family:var(--display);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-size:15px;margin:6px 0 0}
+.lede{font-size:18px;max-width:62ch;margin:20px 0 0}
+.band{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin:28px 0;padding:16px 0;border-block:2px solid var(--ink)}
+.band b{display:block;font-family:var(--display);font-size:34px;line-height:1;font-weight:700;color:var(--green);font-variant-numeric:tabular-nums}
+.band span{font-size:14px;color:var(--muted)}
+.founding{background:var(--green-soft);padding:20px 22px;margin:0 0 28px}
+.founding .price{font-family:var(--display);font-size:44px;font-weight:700;line-height:1}
+.founding .price s{font-size:24px;color:var(--muted);font-weight:500;margin-left:8px}
+.founding ul{margin:12px 0 0;padding-left:20px}
+.tblwrap{overflow-x:auto;margin-bottom:8px}
+table{border-collapse:collapse;width:100%;min-width:480px}
+th,td{text-align:left;padding:9px 10px 9px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;font-size:14px;color:var(--muted);font-weight:600}
+td.p{font-family:var(--display);font-size:22px;font-weight:600;white-space:nowrap;font-variant-numeric:tabular-nums}
+.note{font-size:14px;color:var(--muted)}
+.todo{background:var(--flag-bg);color:var(--flag);padding:1px 6px;font-size:.92em;font-weight:500}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:8px 0 24px}
+.steps div{border-top:2px solid var(--green);padding-top:8px}
+.steps b{display:block}
+.person{display:grid;grid-template-columns:1fr;gap:4px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.person .role{font-family:var(--display);letter-spacing:.1em;text-transform:uppercase;color:var(--green);font-size:15px}
+.person p{margin:4px 0 0;max-width:62ch}
+footer{margin-top:28px;font-size:13px;color:var(--muted);border-top:1px solid var(--rule);padding-top:10px}
+.meta{max-width:816px;margin:0 auto 16px;font-size:14px;color:var(--muted)}
+@media print{body{background:#fff;padding:0}.sheet{border:0;margin:0;page-break-after:always}.meta{display:none}}
+</style>
+
+<p class="meta">Draft for Jeremy. Highlighted brackets are details to confirm before this goes to members. No financials or investor terms appear anywhere in this kit.</p>
+
+<section class="sheet" aria-label="Offer sheet">
+  <p class="tag">Prepare the swing and the body that powers it. One place. One plan.</p>
+  <h1>18 Golf Performance Club</h1>
+  <p class="tag">Founding membership · Downtown Chattanooga</p>
+  <p class="lede">A golf performance club where you practice with launch-monitor data, train in a modern functional training area built for golf, and get tested and looked after by people who work with athletes every day. One membership that starts with testing and a custom plan. Open 24/7 with no front desk.</p>
+
+  <div class="band">
+    <div><b>5</b><span>data-driven hitting stations</span></div>
+    <div><b>3</b><span>digital strength stations</span></div>
+    <div><b>3,000</b><span>square feet, built so every foot works</span></div>
+    <div><b>24/7</b><span>member access, no front desk</span></div>
+  </div>
+
+  <div class="founding">
+    <h2>Founding membership</h2>
+    <div class="price">$500<span style="font-size:20px"> / month, all in</span></div>
+    <ul>
+      <li>One flat rate for every member. Total membership is capped at 100.</li>
+      <li>12-month commitment, billed from opening day. Opening target: late 2027.</li>
+      <li>Everything in Member: your 18 Profile (interview and testing), your custom routine, a retest every 3 months, the hitting stations, the training floor and the recovery zone, 24/7. There is no front desk; tours run on set days.</li>
+      <li>Founding members are the first to join before opening. <span class="todo">[Decide: any founding perk besides first pick of start dates, such as a founders wall?]</span></li>
+    </ul>
+  </div>
+
+  <h2>Memberships</h2>
+  <div class="tblwrap">
+  <table>
+    <thead><tr><th>Tier</th><th>Price</th><th>What it includes</th></tr></thead>
+    <tbody>
+      <tr><td>Member</td><td class="p">$500</td><td>12-month commitment. Your 18 Profile (interview and testing), a custom routine and a retest every 3 months, plus 24/7 access, the training floor and the hitting stations</td></tr>
+      <tr><td>Add-ons</td><td class="p">By session</td><td>One-on-one training, rehab and PGA instruction, per session or in packages</td></tr>
+      <tr><td>Juniors</td><td class="p">Packages</td><td>Lessons and strength sessions, booked or with a parent or coach. Pricing to be set</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">Optional add-ons from independent coaches: strength sessions with the strength coach and lessons with the PGA professional, $150 each.</p>
+
+  <h2 style="margin-top:24px">How to join the founding group</h2>
+  <div class="steps">
+    <div><b>Talk with Jeremy</b>A short conversation about how you train and what you need.</div>
+    <div><b>Sign a letter of intent</b>Non-binding. No payment is taken and nothing is owed if plans change.</div>
+    <div><b>Confirm before opening</b>You confirm your spot and your 12-month commitment before the doors open. <span class="todo">[Confirmation window to set with attorney]</span></div>
+  </div>
+  <footer>18 Golf Performance Club · Chattanooga, TN · <span class="todo">[Phone / email / website]</span> · Prices and opening date are targets and may change before signing.</footer>
+</section>
+
+<section class="sheet" aria-label="Team page">
+  <p class="tag">Who you are joining</p>
+  <h1>The people behind it</h1>
+  <p class="lede">Three people who work with competitive players every week, in one building, on one membership.</p>
+
+  <div class="person">
+    <h3>Jeremy Herum, MS, LAT, ATC, CSCS</h3>
+    <span class="role">Owner and clinical lead</span>
+    <p>Athletic trainer for Chattanooga State Community College, covering about 150 athletes across six sports. Founder of ATPRX, LLC, a sports medicine access practice built on one idea: get athletes help before pain becomes lost time. At 18 Golf Performance Club he runs the testing and recovery side and the onboarding and retests. <span class="todo">[Add a sentence on why golf and why Chattanooga]</span></p>
+  </div>
+  <div class="person">
+    <h3>[Name to be added], PGA</h3>
+    <span class="role">Head golf professional</span>
+    <p>Independent PGA professional who leads lessons and junior programs. <span class="todo">[Add name, years of teaching, certifications, launch-monitor experience, one line on teaching style]</span></p>
+  </div>
+  <div class="person">
+    <h3>General manager</h3>
+    <span class="role">To be hired</span>
+    <p>Runs member experience and day-to-day operations so the coaches can coach. <span class="todo">[Add name once hired]</span></p>
+  </div>
+  <div class="person">
+    <h3>Winston, "Coach Smooth"</h3>
+    <span class="role">Strength coach</span>
+    <p>Chattanooga strength and conditioning coach who runs Smooth Fitness. Leads group and one-on-one strength training at 18 Golf Performance Club. <span class="todo">[Add full name, credentials, athletes and golfers he has worked with]</span></p>
+  </div>
+
+  <h2 style="margin-top:24px">What the space is built for</h2>
+  <p>Practice with real data, train in the gym, get tested, and recover without leaving the building. The clinical room and recovery zone are there so a nagging problem gets looked at early, not ignored until it costs you a season. <span class="todo">[Confirm the exact wording of clinical services with counsel before printing]</span></p>
+
+  <h2 style="margin-top:24px">Include with this page</h2>
+  <p class="note">Floor plan and three renderings (bays, gym floor, entrance) · A sample 18 Profile (names removed) · The one-page commitment letter.</p>
+  <footer>18 Golf Performance Club · Prepare the swing and the body that powers it. One place. One plan.</footer>
+</section>

@@ -1,0 +1,6 @@
+model/stage3.xlsx
+model/stage3b.xlsx
+model/sens/
+model/sens_results.json
+__pycache__/
+*.pyc
