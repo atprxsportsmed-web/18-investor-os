@@ -16,5 +16,8 @@
 - Attorney reviews (names, IP, offering).
 - Then: investor-ready pass, then dry run of the pitch.
 
+## Update Nov 11
+Rent $16/sq ft; no returned capital, exit, or tranches; workbook text stripped; slides 6, 9-13 updated. Base needs $401K, Conservative $455K; Base structure B payback Year 5.
+
 ## Update Nov 10
 Model and slides 6, 9-14 updated for new equipment/insurance inputs. Staged funding removed from deck; slide 11 rows merged. Next: rent, quotes, names, attorney review.

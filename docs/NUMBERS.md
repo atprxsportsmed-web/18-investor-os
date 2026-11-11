@@ -4,29 +4,24 @@ Source of truth for every number on the deck and kit. After any model change, ru
 
 | Metric | Conservative | Base | Upside |
 |---|---|---|---|
-| Total capital required | $431K | $391K | $385K |
-| Surplus vs $500K raise | $69K | $109K | $115K |
+| Total capital required | $455K | $401K | $390K |
+| Buffer above capital required | $45K | $99K | $110K |
 | Members at month 36 | 44 | 80 | 100 |
-| First profitable month | 17 | 5 | 1 |
+| First profitable month | 21 | 6 | 1 |
 | Year 3 revenue | $288K | $511K | $679K |
-| Year 3 operating profit | $35K | $222K | $378K |
+| Year 3 operating profit | $22K | $210K | $365K |
 
-- Break-even: about 36.9 members; fixed costs 18,435 per month before contingency
+- Break-even: about 38.9 members; fixed costs 19,435 per month before contingency
 - Contribution per member: $526.52 (dues $500 + add-on share $66 - card fees and follow-up $39.48)
 
-## Base case investor returns (5 years)
+## Investor returns, cash only, 5 years (no exit, no returned capital)
 
-| Structure | Cash only | With exit | IRR with exit |
+| Structure | Conservative | Base | Upside |
 |---|---|---|---|
-| A. Straight equity | 0.70x | 1.28x | 6% |
-| B. Priority payback to 1.0x | 1.17x | 1.75x | 17% |
-| C. Priority payback to 1.5x | 1.01x | 1.60x | 13% |
+| A. Straight equity | 0.06x | 0.45x | 0.75x |
+| B. Priority payback to 1.0x | 0.14x | 1.05x | 1.35x |
+| C. Priority payback to 1.5x | 0.09x | 0.75x | 1.25x |
+| Year payback complete, B | Not within 5 years | 5 | 4 |
+| Year payback complete, C | Not within 5 years | Not within 5 years | Not within 5 years |
 
-With exit, Conservative 0.33x to 0.44x; Upside 1.69x to 2.20x.
-
-## Funding stages
-
-- Tranche 1: at close: $65K
-- Tranche 2: lease and deposits: $76K
-- Tranche 3: equipment and opening: $181K
-- Reserve: raise less tranches 1 to 3: $178K
+No staged funding: the raise is held in the account and drawn as needed. Whatever is not spent stays in the business as a buffer.

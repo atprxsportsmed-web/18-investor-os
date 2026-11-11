@@ -17,3 +17,11 @@
 - Dropped the $1,500 velocity device and ski erg (not in the new list).
 - Removed staged funding from the ask (slide 13) and risks (slide 14). The $500K is one raise; unused capital still returned in Year 2.
 - Slide 11 combines ramp operating losses and safety cushion into one row ("Operating losses until break-even, plus safety cushion": $69K Base, $108K Conservative).
+
+## Nov 11, 2026
+- Rent planned at $16/sq ft/year all in ($4,000/month), a more conservative placeholder; no flex industrial quote yet.
+- Unused capital is no longer returned in Year 2. It stays in the account as a buffer, drawn as needed.
+- Investor sale/exit and buyout scenarios removed (exit multiple, "with exit" returns, IRR, Ownership scenarios sheet). Returns are cash from operations only. Revisit if/when needed.
+- Staged funding (tranches) removed from the model and deck. The old tranches were line-item groupings, not a spend timeline, so they did not guarantee cash before spending. Funds are drawn as needed.
+- Sources are the investor raise only (no owner cash, no founding-member cash).
+- Explanatory text stripped from the workbook (notes columns, prose rows, Guide and Changes and flags sheets). Built by model/simplify.py, which runs last.
