@@ -6,7 +6,7 @@ Start every session by reading `STATUS.md`, then `docs/NUMBERS.md`.
 
 ## The business (locked unless Jeremy says otherwise; log changes in `docs/DECISIONS.md`)
 - Premium coached golf performance club, downtown Chattanooga, about 3,000 sq ft, opening target Oct/Nov 2027.
-- Membership: flat **$500/month all in**, 12-month commitment, **cap 133 (90% of peak station capacity)**, no founding rate, no tiers. Every membership includes the interview, ROM/strength/power testing (the "18 Profile"), a custom routine, and a retest every 3 months.
+- Membership: flat **$500/month all in**, 3-month commitment (5% off 6-month, 10% off 12-month terms), **cap 133 (90% of peak station capacity)**, no founding rate, no tiers. Every membership includes the interview, ROM/strength/power testing (the "18 Profile"), a custom routine, and a retest every 3 months.
 - Model is **dues only** (no add-on revenue). Training-only packages, no facility use, not in the projections: PGA lesson **$175/hr**, performance/athletic therapy **$199/hr**, personal training/strength coaching **$150/hr**. Juniors buy session packages only (pricing not set).
 - Access: **24/7** keycard or app, no front desk.
 - Facility: 5 hitting stations ($82,197.10 all in, no TrackMan bay), 3 digital strength stations (Tonal-style, $5K each), a functional training tower, kettlebells, dumbbells, balls, cables (**no barbells**, for liability), $45K gym placeholder, clinical/testing $15K, Normatec and recovery $3K, access control $10K + $300/mo, insurance still a placeholder (quote pending).

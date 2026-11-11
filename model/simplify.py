@@ -86,6 +86,28 @@ A=wb["Assumptions"]; A["A59"]=None; A["B59"]=None
 Sm=wb["Summary"]
 for r in range(31,38):
     for c in range(1,6): Sm.cell(r,c).value=None
+# ---------- 4b. Remove the TrackMan expansion logic: five hitting stations only ----------
+for n in ("Base","Conservative","Upside"):
+    ws=wb[n]
+    for c in range(2,ws.max_column+1):
+        L=openpyxl.utils.get_column_letter(c)
+        ws[f"{L}5"]="=Assumptions!$B$17"
+        ws[f"{L}22"]="=Assumptions!$B$41+Assumptions!$B$122"
+        for r in range(45,51): ws[f"{L}{r}"].value=None
+    for r in range(45,51): ws[f"A{r}"].value=None
+    ws["A22"]="Software + billing + access control"
+for n,col in (("Conservative","B"),("Base","C"),("Upside","D")): wb["Startup"][f"{col}39"]=f"={n}!B36"
+St=wb["Startup"]
+for r in (6,8):
+    for c in range(1,6): St.cell(r,c).value=None
+for r in (39,40,41):
+    for c in range(1,6): wb["Summary"].cell(r,c).value=None
+for r in (18,110,111,112,113,118,119,120):
+    for c in range(1,3): A.cell(r,c).value=None
+A["A117"]="Five hitting stations, 24/7 access, performance onboarding"
+for row in wb["Dues only"].iter_rows():
+    for c in row:
+        if isinstance(c.value,str) and "Assumptions!$B$18" in c.value: c.value=c.value.replace("Assumptions!$B$18","Assumptions!$B$17")
 # ---------- 5. Delete explanatory and scenario sheets ----------
 for n in ("Guide","Changes and flags","Ownership scenarios"):
     if n in wb.sheetnames: wb.remove(wb[n])

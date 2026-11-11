@@ -24,3 +24,6 @@ Model and slides 6, 9-14 updated for new equipment/insurance inputs. Staged fund
 
 ## Update Nov 11 (dues only)
 Model is dues only; single payback structure (owner takes nothing until investor repaid). Base needs $414K; Conservative $516K (over the raise by $16K). Base investor repaid Year 5.
+
+## Update Nov 11 (3-month terms, 5% churn)
+Base needs $421K, Y3 profit $70K, investor not repaid in 5 years at 5% monthly churn; Conservative needs $617K. Decision needed on churn assumption, terms mix, and raise size.

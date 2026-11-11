@@ -33,3 +33,10 @@
 
 ## Nov 11, 2026 (cap)
 - Member cap raised from 100 to 133: 90% of the 148.7 members the five stations carry at the 85% peak ceiling (Station capacity tab; buffer input B17). Upside now reaches the cap by about month 34. Space is about 22.5 sq ft per member at the cap.
+
+## Nov 11, 2026 (TrackMan, commitment, churn)
+- TrackMan expansion logic removed from the model (five hitting stations only). This also removes a $250/month "added bay" software cost that was being charged by a leftover switch.
+- All memberships are 3-month commitments, marketed as "give us 3 months to transform your game". Churn planned at 5% a month in the Base case (Conservative 6%, Upside 4%, keeping the 1-point spread); working to bring it lower. The end-of-quarter retest is the retention moment.
+- Term discounts: 5% off the monthly price for a 6-month term, 10% off for a 12-month term. Inputs on Assumptions rows 214-219; the share of members on longer terms is 0% until there is data, so projections use the $500 price. Unit economics and break-even use list price.
+- Result at 5% churn: Base needs $421K, Year 3 profit $70K, investor not repaid within 5 years (0.47x); Conservative needs $617K. At 3% churn Base Year 3 profit is about $173K and payback is Year 5.
+- Member cap stays 133, but at 5% churn the Upside case levels off near 120 and does not reach it within 36 months.
