@@ -25,3 +25,8 @@
 - Staged funding (tranches) removed from the model and deck. The old tranches were line-item groupings, not a spend timeline, so they did not guarantee cash before spending. Funds are drawn as needed.
 - Sources are the investor raise only (no owner cash, no founding-member cash).
 - Explanatory text stripped from the workbook (notes columns, prose rows, Guide and Changes and flags sheets). Built by model/simplify.py, which runs last.
+
+## Nov 11, 2026 (later)
+- Model is dues only: member take-up of coaching and lessons set to 0. Contractor take-home rows removed. Training-only packages ($175 PGA lesson, $199 performance/athletic therapy, $150 personal training/strength, per hour) sit on Assumptions rows 209-212, not in the projections.
+- Owner takes no distributions until the investor is repaid: investor share until payback = 100% (Assumptions B57). Straight equity and 1.5x structures removed because they do not repay within 5 years.
+- Open: follow-up coaching is costed at $30/hr (Assumptions B190), a placeholder. At $60/hr Base Y3 profit drops about $21K; at $120/hr about $54K more.

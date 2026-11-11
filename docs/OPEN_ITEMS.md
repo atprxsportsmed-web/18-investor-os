@@ -24,3 +24,6 @@
 - Quotes: tower, weights, cardio, build-out; formal insurance quote (property coverage not in the $185)
 - Tonal recurring subscription, if any, is not priced
 - Tranche logic remains in the model (Sources and uses); deck no longer shows it. Decide whether to remove from the workbook.
+- Follow-up coaching rate ($30/hr placeholder) and who delivers it; decide the real rate
+- Dues-only Conservative case needs about $516K, $16K more than the raise
+- Prices for members buying sessions (training-only prices are set; member session pricing is not)

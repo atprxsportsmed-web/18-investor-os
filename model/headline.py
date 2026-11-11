@@ -14,9 +14,7 @@ for name, row, f in rows:
     print(f"| {name} | " + " | ".join(f(S.cell(row, c).value) if isinstance(S.cell(row, c).value, (int, float)) else str(S.cell(row, c).value) for c in (2, 3, 4)) + " |")
 print(f"\n- Break-even: about {S['B27'].value:.1f} members; fixed costs {S['B25'].value:,.0f} per month before contingency")
 print(f"- Contribution per member: ${U['B10'].value:,.2f} (dues ${U['B6'].value:,.0f} + add-on share ${U['B7'].value:,.0f} - card fees and follow-up ${-U['B9'].value:,.2f})")
-print("\n## Investor returns, cash only, 5 years (no exit, no returned capital)\n\n| Structure | Conservative | Base | Upside |\n|---|---|---|---|")
-for lab, rc in (("A. Straight equity", 12), ("B. Priority payback to 1.0x", 13), ("C. Priority payback to 1.5x", 14)):
-    print(f"| {lab} | " + " | ".join(r(I.cell(rc, c).value) for c in (2, 3, 4)) + " |")
-for lab, rc in (("Year payback complete, B", 16), ("Year payback complete, C", 17)):
-    print(f"| {lab} | " + " | ".join(str(I.cell(rc, c).value) for c in (2, 3, 4)) + " |")
+print("\n## Investor returns, cash only, 5 years (owner takes no distributions until the investor is paid back; no exit, no returned capital)\n\n| Metric | Conservative | Base | Upside |\n|---|---|---|---|")
+print("| Cash returned, multiple of capital | " + " | ".join(r(I.cell(11, c).value) for c in (2, 3, 4)) + " |")
+print("| Year the investor is paid back | " + " | ".join(str(I.cell(13, c).value) for c in (2, 3, 4)) + " |")
 print("\nNo staged funding: the raise is held in the account and drawn as needed. Whatever is not spent stays in the business as a buffer.")

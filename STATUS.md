@@ -21,3 +21,6 @@ Rent $16/sq ft; no returned capital, exit, or tranches; workbook text stripped; 
 
 ## Update Nov 10
 Model and slides 6, 9-14 updated for new equipment/insurance inputs. Staged funding removed from deck; slide 11 rows merged. Next: rent, quotes, names, attorney review.
+
+## Update Nov 11 (dues only)
+Model is dues only; single payback structure (owner takes nothing until investor repaid). Base needs $414K; Conservative $516K (over the raise by $16K). Base investor repaid Year 5.

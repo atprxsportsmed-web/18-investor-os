@@ -18,17 +18,15 @@ put("A1","Investor returns: five years, cash only","title")
 put("A3","Inputs","band")
 for col in "BCDEFG": put(f"{col}3",None,"band")
 put("A4","Investment ($)","label");put("B4","=Assumptions!B54","link",CUR)
-put("A5","Equity offered to the investor","label");put("B5","=Assumptions!B55","pct",PCT)
+put("A5","Equity offered to the investor (after payback)","label");put("B5","=Assumptions!B55","pct",PCT)
 put("A6","Share of operating profit paid out as cash","label");put("B6","=Assumptions!B56","pct",PCT)
-put("A7","Structure B: investor's priority share of cash / payback multiple","label");put("B7","=Assumptions!B57","pct",PCT);put("C7","=Assumptions!B58","link",MULT)
-put("A8","Structure C: investor's priority share of cash / payback multiple","label");put("B8",0.5,"blue",PCT);put("C8",1.5,"blue",MULT)
-put("A10","Summary","band")
-for col in "BCDEFG": put(f"{col}10",None,"band")
-for col,t in zip("BCD",["Conservative","Base","Upside"]): put(f"{col}11",t,"hdr")
-put("A11","Metric","label")
-labels=["Cash returned over 5 years, multiple of capital: A, straight equity","Cash returned over 5 years, multiple of capital: B, priority payback","Cash returned over 5 years, multiple of capital: C, priority to higher multiple","Year 5 operating profit","Year priority payback is complete: B","Year priority payback is complete: C"]
-for i,t in enumerate(labels): put(f"A{12+i}",t,"label")
-cases=[("Conservative","B",19),("Base","C",37),("Upside","D",55)]
+put("A7","Investor's share of cash until paid back / payback multiple","label");put("B7","=Assumptions!B57","pct",PCT);put("C7","=Assumptions!B58","link",MULT)
+put("A9","Summary","band")
+for col in "BCDEFG": put(f"{col}9",None,"band")
+for col,t in zip("BCD",["Conservative","Base","Upside"]): put(f"{col}10",t,"hdr")
+put("A10","Metric","label")
+for i,t in enumerate(["Cash returned over 5 years, multiple of capital","Year 5 operating profit","Year the investor is paid back"]): put(f"A{11+i}",t,"label")
+cases=[("Conservative","B",15),("Base","C",30),("Upside","D",45)]
 for name,scol,r0 in cases:
     p,d=r0+2,r0+3
     put(f"A{r0}",f"{name} case","band")
@@ -40,28 +38,20 @@ for name,scol,r0 in cases:
         a=openpyxl.utils.get_column_letter(2+12*j); b=openpyxl.utils.get_column_letter(13+12*j)
         put(f"{col}{p}",f"=SUM({name}!{a}30:{b}30)","cur",CUR)
         put(f"{col}{d}",f"=MAX(0,{col}{p})*$B$6","cur",CUR)
-    A=r0+5; put(f"A{r0+4}","Structure A: straight equity","sub"); put(f"A{A}","Investor cash from operations","label")
-    for col in "CDEFG": put(f"{col}{A}",f"=$B$5*{col}{d}","cur",CUR)
-    for tag,(s0,pr,mu) in dict(B=(r0+6,"$B$7","$C$7"),C=(r0+11,"$B$8","$C$8")).items():
-        put(f"A{s0}",f"Structure {tag}: priority payback, then equity","sub")
-        o,n,c,e=s0+1,s0+2,s0+3,s0+4
-        put(f"A{o}","Priority amount still owed, start of year","label");put(f"A{n}","Distributions needed to clear it this year","label")
-        put(f"A{c}","Investor cash from operations","label");put(f"A{e}","Priority amount still owed, end of year","label")
-        for j,col in enumerate("CDEFG"):
-            prev=openpyxl.utils.get_column_letter(2+j+1-1)
-            put(f"{col}{o}",f"=$B$4*{mu}" if j==0 else f"={prev}{e}","cur",CUR)
-            put(f"{col}{n}",f"=IF({pr}<=0,0,MIN({col}{d},{col}{o}/{pr}))","cur",CUR)
-            put(f"{col}{c}",f"={pr}*{col}{n}+$B$5*({col}{d}-{col}{n})","cur",CUR)
-            put(f"{col}{e}",f"=MAX(0,{col}{o}-{pr}*{col}{n})","cur",CUR)
-    # summary links
-    put(f"{scol}12",f"=SUM(C{A}:G{A})/$B$4","cur",MULT)
-    put(f"{scol}13",f"=SUM(C{r0+9}:G{r0+9})/$B$4","cur",MULT)
-    put(f"{scol}14",f"=SUM(C{r0+14}:G{r0+14})/$B$4","cur",MULT)
-    put(f"{scol}15",f"=G{p}","cur",CUR)
-    put(f"{scol}16",f'=IFERROR(INDEX($C${r0+1}:$G${r0+1},MATCH(0,C{r0+10}:G{r0+10},0)),"Not within 5 years")',"cur","0")
-    put(f"{scol}17",f'=IFERROR(INDEX($C${r0+1}:$G${r0+1},MATCH(0,C{r0+15}:G{r0+15},0)),"Not within 5 years")',"cur","0")
-for r in (16,17):
-    for col in "BCD": R[f"{col}{r}"].alignment=openpyxl.styles.Alignment(horizontal="right")
+    put(f"A{r0+4}","Priority payback, then equity","sub")
+    o,n,c,e=r0+5,r0+6,r0+7,r0+8
+    put(f"A{o}","Priority amount still owed, start of year","label");put(f"A{n}","Distributions needed to clear it this year","label")
+    put(f"A{c}","Investor cash from operations","label");put(f"A{e}","Priority amount still owed, end of year","label")
+    for j,col in enumerate("CDEFG"):
+        prev=openpyxl.utils.get_column_letter(2+j)
+        put(f"{col}{o}","=$B$4*$C$7" if j==0 else f"={prev}{e}","cur",CUR)
+        put(f"{col}{n}",f"=IF($B$7<=0,0,MIN({col}{d},{col}{o}/$B$7))","cur",CUR)
+        put(f"{col}{c}",f"=$B$7*{col}{n}+$B$5*({col}{d}-{col}{n})","cur",CUR)
+        put(f"{col}{e}",f"=MAX(0,{col}{o}-$B$7*{col}{n})","cur",CUR)
+    put(f"{scol}11",f"=SUM(C{c}:G{c})/$B$4","cur",MULT)
+    put(f"{scol}12",f"=G{p}","cur",CUR)
+    put(f"{scol}13",f'=IFERROR(INDEX($C${r0+1}:$G${r0+1},MATCH(0,C{e}:G{e},0)),"Not within 5 years")',"cur","0")
+    R[f"{scol}13"].alignment=openpyxl.styles.Alignment(horizontal="right")
 
 # ---------- 2. Sources and uses: merge ramp + cushion, no staged funding ----------
 S=wb["Sources and uses"]
@@ -86,9 +76,13 @@ wb["Summary"]["A11"]="Buffer above capital required"
 wb["Startup"]["A43"]="Buffer above capital required"
 # ---------- 4. Ownership: drop exit-value rows; Assumptions exit multiple ----------
 O=wb["Ownership"]
-for r in (15,16):
+for r in list(range(15,22))+list(range(28,34)):
     for c in range(1,6): O.cell(r,c).value=None
 A=wb["Assumptions"]; A["A59"]=None; A["B59"]=None
+# contractor take-home rows no longer apply (dues only)
+Sm=wb["Summary"]
+for r in range(31,38):
+    for c in range(1,6): Sm.cell(r,c).value=None
 # ---------- 5. Delete explanatory and scenario sheets ----------
 for n in ("Guide","Changes and flags","Ownership scenarios"):
     if n in wb.sheetnames: wb.remove(wb[n])
