@@ -45,3 +45,7 @@
 - Churn clarified as 5% per quarter (the 3-month term length), replacing 5% monthly. Cases: Conservative 6%, Base 5%, Upside 4% per quarter (the 1-point spread is an assumption), converted to a monthly equivalent in the engine (Assumptions rows 23-24).
 - Sign-ups weighted toward winter because the facility is indoor (Assumptions B137:B148): Jan 1.4, Feb 1.3, Mar 1.1, Apr 0.9, May 0.8, Jun 0.7, Jul 0.7, Aug 0.8, Sep 0.9, Oct 1.0, Nov 1.1, Dec 1.3. Average 1.0. These factors are an assumption to confirm.
 - Result: Base needs $403K, Year 3 profit $256K, first profitable month 5, investor repaid Year 4 (1.28x in 5 years). Conservative needs $446K (covered by the $500K), first profitable month 15, 0.64x in 5 years. Upside reaches the 133 cap and repays in Year 3. Buffer in the raise: $97K Base, $54K Conservative.
+
+## Nov 11, 2026 (roles, key person)
+- Slide 13 roles now include the GM (day-to-day operations, member experience, social media) and traditional investor roles (financial review, approval of major decisions, strategic sounding board). Counsel to confirm.
+- Slide 14 key person risk now includes a term key person life insurance policy on Jeremy, owned by the business. Quote pending; premium not yet in the model.
