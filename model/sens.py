@@ -9,7 +9,7 @@ def half_premium(A):
 cases=[
  ("As built",lambda A:None),
  ("Sign-ups 25% slower",lambda A:scale(A,["B22","C22","D22"],0.75)),
- ("Monthly churn doubled",lambda A:scale(A,["B23","C23","D23"],2)),
+ ("Quarterly churn doubled",lambda A:scale(A,["B24","C24","D24"],2)),
  ("All-in price $450 (sign-ups 12% faster)",lambda A:(A.__setitem__("B5",450),A.__setitem__("B6",450),A.__setitem__("B9",399),scale(A,["B22","C22","D22"],1.125))),
  ("All-in price $600 (sign-ups 19% slower)",lambda A:(A.__setitem__("B5",600),A.__setitem__("B6",600),A.__setitem__("B9",529),scale(A,["B22","C22","D22"],0.8125))),
  ("All dues 10% lower",lambda A:scale(A,["B5","B6","B7","B124","B9"],0.9)),
@@ -22,16 +22,16 @@ cases=[
  ("Part-time hire works 30 hours a week",lambda A:A.__setitem__("B162",30)),
  ("Tiered pricing on ($400 / $450 / $500, slower sign-ups at each step)",lambda A:A.__setitem__("B175",1)),
  ("30% of members on longer terms (15% 6-month, 15% 12-month)",lambda A:(A.__setitem__("B217",0.15),A.__setitem__("B218",0.15))),
- ("Churn at 3% a month in the Base case (lower than planned)",lambda A:A.__setitem__("C23",0.03)),
+ ("Churn at 3% per quarter in the Base case (lower than planned)",lambda A:A.__setitem__("C24",0.03)),
  ("Owner delivers the follow-ups (no strength coach pay)",lambda A:A.__setitem__("B189",0)),
  ("Rent starts at lease signing (6 months paid before opening)",lambda A:A.__setitem__("B194",6)),
  ("Landlord allowance of $20K toward the build-out",lambda A:A.__setitem__("B195",20000)),
 ("Larger space: 4,800 sq ft (rent and build-out scale with size)",lambda A:A.__setitem__("B26",4800)),
  ("Follow-up coaching paid at $120/hour (80% of $150)",lambda A:A.__setitem__("B190",120)),
  ("GM salary $60K instead of $45K",lambda A:A.__setitem__("B33",60000)),
- ("Seasonal sign-ups (winter 0.7, spring 1.3 to 1.4)",lambda A:[A.__setitem__(f"B{137+i}",v) for i,v in enumerate([0.7,0.7,1.3,1.4,1.4,1.1,1.0,1.0,1.0,1.0,0.7,0.7])]),
+ ("No seasonality: flat sign-ups all year",lambda A:[A.__setitem__(f"B{137+k}",1.0) for k in range(12)]),
  ("Winston also needs a $40K base salary",lambda A:A.__setitem__("B34",40000)),
- ("Stress: sign-ups 25% slower, churn 1.5x",lambda A:(scale(A,["B22","C22","D22"],0.75),scale(A,["B23","C23","D23"],1.5))),
+ ("Stress: sign-ups 25% slower, churn 1.5x",lambda A:(scale(A,["B22","C22","D22"],0.75),scale(A,["B24","C24","D24"],1.5))),
 ]
 out=[]
 for i,(name,fn) in enumerate(cases):

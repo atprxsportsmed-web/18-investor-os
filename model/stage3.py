@@ -301,7 +301,7 @@ for j,h in enumerate(hd):
 S2.row_dimensions[5].height=58
 chg={"As built":"No change",
 "Sign-ups 25% slower":"Assumptions B22, C22, D22 multiplied by 0.75",
-"Monthly churn doubled":"Assumptions B23, C23, D23 multiplied by 2",
+"Quarterly churn doubled":"Assumptions B24, C24, D24 multiplied by 2",
 "All-in price $450 (sign-ups 12% faster)":"B5 and B6 set to 450, founding price 399, sign-ups x1.125",
 "All-in price $600 (sign-ups 19% slower)":"B5 and B6 set to 600, founding price 529, sign-ups x0.8125",
 "All dues 10% lower":"B5, B6, B7, B9 and B124 multiplied by 0.9",
@@ -313,16 +313,16 @@ chg={"As built":"No change",
 "No part-time hire (owner covers the floor for all 60 months)":"B161 set to 0",
 "Part-time hire works 30 hours a week":"B162 set to 30",
 "Tiered pricing on ($400 / $450 / $500, slower sign-ups at each step)":"B175 set to 1",
-"30% of members on longer terms (15% 6-month, 15% 12-month)":"B217 and B218 set to 0.15","Churn at 3% a month in the Base case (lower than planned)":"C23 set to 0.03",
+"30% of members on longer terms (15% 6-month, 15% 12-month)":"B217 and B218 set to 0.15","Churn at 3% per quarter in the Base case (lower than planned)":"C24 set to 0.03",
 "Owner delivers the follow-ups (no strength coach pay)":"B189 set to 0",
 "Rent starts at lease signing (6 months paid before opening)":"B194 set to 6",
 "Landlord allowance of $20K toward the build-out":"B195 set to 20,000",
 "Larger space: 4,800 sq ft (rent and build-out scale with size)":"B26 (facility size) set to 4,800",
 "Follow-up coaching paid at $120/hour (80% of $150)":"B190 set to 120",
 "GM salary $60K instead of $45K":"B33 set to 60,000",
-"Seasonal sign-ups (winter 0.7, spring 1.3 to 1.4)":"B137 to B148 set to 0.7, 0.7, 1.3, 1.4, 1.4, 1.1, 1, 1, 1, 1, 0.7, 0.7 (illustrative)",
+"No seasonality: flat sign-ups all year":"B137:B148 set to 1.0",
 "Winston also needs a $40K base salary":"B34 set to 40,000",
-"Stress: sign-ups 25% slower, churn 1.5x":"B22:D22 x 0.75, B23:D23 x 1.5"}
+"Stress: sign-ups 25% slower, churn 1.5x":"B22:D22 x 0.75, B24:D24 x 1.5"}
 res=json.load(open("sens_results.json"))
 for i,d in enumerate(res):
     r=6+i

@@ -1,6 +1,6 @@
 # Status
 
-**Goal:** investor-ready deck and model for the $500K raise. Last updated Nov 10, 2026.
+**Goal:** investor-ready deck and model for the $500K raise. Last updated Nov 11, 2026.
 
 ## Done
 - Financial model rebuilt on the flat $500 model, audited Nov 10, follow-up cost bug fixed, 0 formula errors. `model/build.sh` reproduces it.
@@ -27,3 +27,6 @@ Model is dues only; single payback structure (owner takes nothing until investor
 
 ## Update Nov 11 (3-month terms, 5% churn)
 Base needs $421K, Y3 profit $70K, investor not repaid in 5 years at 5% monthly churn; Conservative needs $617K. Decision needed on churn assumption, terms mix, and raise size.
+
+## Update Nov 11 (quarterly churn, winter sign-ups)
+Churn is 5% per quarter (6/5/4 across cases) with winter-weighted sign-ups. Base needs $403K, Y3 profit $256K, investor repaid Year 4; Conservative needs $446K, within the raise. Slides 10-14 updated. To confirm: churn spread, seasonality factors, follow-up coaching rate, mix of 6/12-month terms.

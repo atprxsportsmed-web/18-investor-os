@@ -40,3 +40,8 @@
 - Term discounts: 5% off the monthly price for a 6-month term, 10% off for a 12-month term. Inputs on Assumptions rows 214-219; the share of members on longer terms is 0% until there is data, so projections use the $500 price. Unit economics and break-even use list price.
 - Result at 5% churn: Base needs $421K, Year 3 profit $70K, investor not repaid within 5 years (0.47x); Conservative needs $617K. At 3% churn Base Year 3 profit is about $173K and payback is Year 5.
 - Member cap stays 133, but at 5% churn the Upside case levels off near 120 and does not reach it within 36 months.
+
+## Nov 11, 2026 (quarterly churn, winter sign-ups)
+- Churn clarified as 5% per quarter (the 3-month term length), replacing 5% monthly. Cases: Conservative 6%, Base 5%, Upside 4% per quarter (the 1-point spread is an assumption), converted to a monthly equivalent in the engine (Assumptions rows 23-24).
+- Sign-ups weighted toward winter because the facility is indoor (Assumptions B137:B148): Jan 1.4, Feb 1.3, Mar 1.1, Apr 0.9, May 0.8, Jun 0.7, Jul 0.7, Aug 0.8, Sep 0.9, Oct 1.0, Nov 1.1, Dec 1.3. Average 1.0. These factors are an assumption to confirm.
+- Result: Base needs $403K, Year 3 profit $256K, first profitable month 5, investor repaid Year 4 (1.28x in 5 years). Conservative needs $446K (covered by the $500K), first profitable month 15, 0.64x in 5 years. Upside reaches the 133 cap and repays in Year 3. Buffer in the raise: $97K Base, $54K Conservative.

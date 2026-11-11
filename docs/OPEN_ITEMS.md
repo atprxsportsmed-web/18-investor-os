@@ -23,10 +23,7 @@
 - Rent figure for flex industrial space (still $12/sq ft placeholder)
 - Quotes: tower, weights, cardio, build-out; formal insurance quote (property coverage not in the $185)
 - Tonal recurring subscription, if any, is not priced
-- Tranche logic remains in the model (Sources and uses); deck no longer shows it. Decide whether to remove from the workbook.
 - Follow-up coaching rate ($30/hr placeholder) and who delivers it; decide the real rate
-- Dues-only Conservative case needs about $516K, $16K more than the raise
 - Prices for members buying sessions (training-only prices are set; member session pricing is not)
-- Churn: confirm 5% is a monthly rate; get a quarterly-renewal view once the first founding cohort exists
 - Mix of members choosing 6- and 12-month terms (discount cost not in projections yet; longer terms should also lower churn, not modeled)
-- Conservative case needs about $117K more than the raise at 5% churn: decide the plan (cost cuts, bigger raise, slower build)
+- Churn: 5% per quarter is the Base assumption; the 6%/4% spread and the winter sign-up factors are placeholders. Replace with real renewal data after the first quarterly retest.
