@@ -71,6 +71,9 @@ sty(22,25); S["A22"]="Buffer above the Conservative-sized uses"; S["B22"]="=B21-
 sty(23,26); S["A23"]="Buffer above the Base-case uses"; S["B23"]="=B21-D16"
 for r in range(5,15): S[f"C{r}"]=f"=IF($B$16=0,0,B{r}/$B$16)"
 S["A1"]="Sources and uses of funds"
+SC=wb["Station capacity"]
+SC["A17"]="Crowding buffer (share of peak capacity left open)"; SC["B17"]=0.1; SC["B17"]._style=copy(SC["B9"]._style); SC["A17"]._style=copy(SC["A9"]._style); SC["B17"].number_format="0%"
+SC["A26"]="Member cap that keeps the buffer (rounded down)"; SC["B26"]="=ROUNDDOWN(B21*(1-B17),0)"; SC["A26"]._style=copy(SC["A25"]._style); SC["B26"]._style=copy(SC["B24"]._style)
 # ---------- 3. Labels ----------
 wb["Summary"]["A11"]="Buffer above capital required"
 wb["Startup"]["A43"]="Buffer above capital required"

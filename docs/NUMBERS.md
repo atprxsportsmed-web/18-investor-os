@@ -6,10 +6,10 @@ Source of truth for every number on the deck and kit. After any model change, ru
 |---|---|---|---|
 | Total capital required | $516K | $414K | $392K |
 | Buffer above capital required | $-16K | $86K | $108K |
-| Members at month 36 | 44 | 80 | 100 |
+| Members at month 36 | 44 | 80 | 133 |
 | First profitable month | Not within 36 mo | 8 | 3 |
-| Year 3 revenue | $255K | $452K | $600K |
-| Year 3 operating profit | $-10K | $170K | $289K |
+| Year 3 revenue | $255K | $452K | $766K |
+| Year 3 operating profit | $-10K | $170K | $442K |
 
 - Break-even: about 44.3 members; fixed costs 19,435 per month before contingency
 - Contribution per member: $462.50 (dues $500 + add-on share $0 - card fees and follow-up $37.50)
@@ -18,7 +18,7 @@ Source of truth for every number on the deck and kit. After any model change, ru
 
 | Metric | Conservative | Base | Upside |
 |---|---|---|---|
-| Cash returned, multiple of capital | 0.03x | 1.04x | 1.29x |
+| Cash returned, multiple of capital | 0.03x | 1.04x | 1.55x |
 | Year the investor is paid back | Not within 5 years | 5 | 3 |
 
 No staged funding: the raise is held in the account and drawn as needed. Whatever is not spent stays in the business as a buffer.

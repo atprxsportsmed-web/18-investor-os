@@ -30,3 +30,6 @@
 - Model is dues only: member take-up of coaching and lessons set to 0. Contractor take-home rows removed. Training-only packages ($175 PGA lesson, $199 performance/athletic therapy, $150 personal training/strength, per hour) sit on Assumptions rows 209-212, not in the projections.
 - Owner takes no distributions until the investor is repaid: investor share until payback = 100% (Assumptions B57). Straight equity and 1.5x structures removed because they do not repay within 5 years.
 - Open: follow-up coaching is costed at $30/hr (Assumptions B190), a placeholder. At $60/hr Base Y3 profit drops about $21K; at $120/hr about $54K more.
+
+## Nov 11, 2026 (cap)
+- Member cap raised from 100 to 133: 90% of the 148.7 members the five stations carry at the 85% peak ceiling (Station capacity tab; buffer input B17). Upside now reaches the cap by about month 34. Space is about 22.5 sq ft per member at the cap.
