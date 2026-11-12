@@ -22,9 +22,9 @@
 
 - Rent figure for flex industrial space (still $12/sq ft placeholder)
 - Quotes: tower, weights, cardio, build-out; formal insurance quote (property coverage not in the $185)
-- Tonal recurring subscription, if any, is not priced
 - Follow-up coaching rate ($30/hr placeholder) and who delivers it; decide the real rate
 - Prices for members buying sessions (training-only prices are set; member session pricing is not)
 - Mix of members choosing 6- and 12-month terms (discount cost not in projections yet; longer terms should also lower churn, not modeled)
 - Churn: 5% per quarter is the Base assumption; the 6%/4% spread and the winter sign-up factors are placeholders. Replace with real renewal data after the first quarterly retest.
 - Key person term life insurance on Jeremy, owned by the business: get a quote (coverage amount and term to be set). Premium is not in the model; add it as a monthly cost once quoted.
+- Tonal: the quote is priced for 1 unit; ask for a 3-unit quote or volume discount, confirm whether the $500 discount applies per unit, confirm sales tax (excluded from the quote), and sign before 12/31/2026 or get the quote extended. The model charges the years 2 to 5 service from month 1 of opening (conservative).

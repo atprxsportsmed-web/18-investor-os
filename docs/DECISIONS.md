@@ -49,3 +49,7 @@
 ## Nov 11, 2026 (roles, key person)
 - Slide 13 roles now include the GM (day-to-day operations, member experience, social media) and traditional investor roles (financial review, approval of major decisions, strategic sounding board). Counsel to confirm.
 - Slide 14 key person risk now includes a term key person life insurance policy on Jeremy, owned by the business. Quote pending; premium not yet in the model.
+
+## Nov 11, 2026 (Tonal quote)
+- Tonal 2 quote received (Hannah Rosa, valid to 12/31/2026). Chosen: 5-year service term. Per unit: $4,685 equipment and delivery plus $1,445 a year service. Due at signing $6,130 per unit ($18,390 for 3); then $1,445 per unit a year for years 2 to 5 ($4,335 a year for 3, spread monthly in Assumptions B41). Five-year cost per unit $11,910, $35,730 for 3, against the earlier $33K estimate. Taxes not included.
+- Gym floor is now $40,390 at opening (was $55K). Result: Base needs $390K, Conservative $437K, Base Year 3 profit $253K, first profitable month 6 (Conservative 16), investor repaid Year 4 (1.27x), break-even about 45 members.

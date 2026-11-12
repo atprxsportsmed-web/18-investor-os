@@ -2,10 +2,10 @@ import openpyxl,re
 wb=openpyxl.load_workbook("stage3b.xlsx")
 D={("Sources and uses","E6"):"Startup rows 11 to 14. $55K: 3 Tonals ($33K with 5-year warranty), tower, weights and storage ($15K), treadmill and assault bike ($7K)",
 ("Space plan","A6"):"Gym floor: 3 digital stations, functional training tower with storage, treadmill, assault bike",
-("Club scenario","A17"):"\u2022 Gym is $55,000: 3 Tonals at $11,000 each with a 5-year insurance and service warranty ($33,000), the functional tower, free weights and storage ($15,000), a treadmill ($4,000) and an assault bike ($3,000).",
-("Equipment list","A24"):"Planning number for the gym floor and storage ($): $55,000 from the owner's figures: 3 Tonals ($33K, quoted), tower with weights and storage ($15K), treadmill ($4K) and assault bike ($3K)",
+("Club scenario","A17"):"\u2022 Gym is $40,390: 3 Tonal 2 units at $6,130 each due at signing (equipment, delivery and year 1 of the 5-year service term, $18,390), the functional tower, free weights and storage ($15,000), a treadmill ($4,000) and an assault bike ($3,000). Service for years 2 to 5 is $1,445 per unit a year, carried in monthly software and service costs.",
+("Equipment list","A24"):"Planning number for the gym floor and storage ($): $40,390: 3 Tonals ($18,390 due at signing, quoted), tower with weights and storage ($15K), treadmill ($4K) and assault bike ($3K)",
 ("Changes and flags","A79"):"Still placeholders: the tower, weights and cardio figures are owner estimates pending quotes; station software, if any beyond the Tonal warranty; rent at $12 per sq ft (no flex industrial figure yet); onboarding of the first 25 to 30 members before opening (about 90 hours).",
-("Equipment list","A2"):"Tonal units are a quote ($11K each, 5-year insurance and service warranty paid upfront). The tower, weights and storage ($15K), treadmill ($4K) and assault bike ($3K) are the owner's figures. Replace with itemized quotes as they arrive.",
+("Equipment list","A2"):"Tonal units are quoted (Tonal 2, 5-year service term: $6,130 per unit due at signing, then $1,445 per unit a year). The tower, weights and storage ($15K), treadmill ($4K) and assault bike ($3K) are the owner's figures. Replace with itemized quotes as they arrive.",
 ("Startup","C11"):"Formula: total bought at opening from the Equipment list: 3 Tonals, the functional tower with weights and storage, a treadmill and an assault bike",
 ("Assumptions","A40"):"Insurance (liability for 24/7 unstaffed use; no building yet)",
 ("Assumptions","E40"):"Owner estimate: $185 a month for liability coverage of a 24/7 unstaffed facility, without a building. Property coverage is not included. Confirm with a formal quote",
@@ -14,7 +14,7 @@ D={("Sources and uses","E6"):"Startup rows 11 to 14. $55K: 3 Tonals ($33K with 5
 ("Unit economics","E10"):"Before fixed costs",
 ("Unit economics","A53"):"Contribution from dues alone ($/month)",
 ("Unit economics","E53"):"$500 less card fees and follow-up coaching; the add-on share is on top",
-("Equipment list","A34"):"The gym is priced from the owner's figures: Tonal quote of $11K each with a 5-year insurance and service warranty paid upfront, $15K for the tower, free weights and storage, and $4K and $3K for the treadmill and assault bike. The digital stations' recurring subscription, if any, is not priced here: add it to Assumptions B41 once quoted. Ask the insurer about the free weights and the functional tower used alone during unstaffed hours.",
+("Equipment list","A34"):"The gym is priced from the owner's figures: Tonal 2 quote on the 5-year service option ($6,130 per unit due at signing, $1,445 per unit a year after), $15K for the tower, free weights and storage, and $4K and $3K for the treadmill and assault bike. The Tonal service payments for years 2 to 5 ($4,335 a year for 3 units) are in Assumptions B41, spread monthly. Ask the insurer about the free weights and the functional tower used alone during unstaffed hours.",
 ("Dues only","A9"):"Junior share of regular members",
 ("Dues only","C9"):"Not used: no junior tier at opening",
 ("Dues only","A21"):"The member cap in the model is 100 (Assumptions B17). Profit at 125, 150 and 200 members is a steady-state view of dues only, shown for reference above the cap.",
@@ -55,7 +55,7 @@ for AUDIT in AUDITS:
     for c in range(1,ws.max_column+1):
         s=ws.cell(last,c); t2=ws.cell(r,c)
         t2.font=copy.copy(s.font); t2.alignment=copy.copy(s.alignment); t2.fill=copy.copy(s.fill); t2.border=copy.copy(s.border)
-SET={("Equipment list","J5"):"Quoted",("Equipment list","K5"):"$11K each including a 5-year insurance and service warranty, paid upfront",
+SET={("Equipment list","J5"):"Quoted",("Equipment list","K5"):"$6,130 per unit due at signing; $1,445 per unit a year for years 2 to 5. Taxes not included",
 ("Equipment list","J6"):"Owner figure",("Equipment list","K6"):"Functional training tower, dumbbells, kettlebells, med balls, sled, bands and the storage center",
 ("Equipment list","J7"):"Owner figure",("Equipment list","K7"):"Assault bike",("Equipment list","J8"):"Owner figure",("Equipment list","K8"):"Commercial treadmill"}
 for r in range(9,13):
