@@ -57,3 +57,7 @@
 ## Nov 13, 2026 (hitting-station software)
 - Software subscription is $1,200 a year per hitting station, 5 stations = $6,000 a year ($500 a month), added to monthly operating costs (Assumptions B41 = $700 base software and billing + $500 station software + Tonal service). The $700 base may already include some launch-monitor software; if so this double counts and is conservative. Confirm the breakdown.
 - Result: Base needs $394K, Conservative $446K (the raise still covers both; buffer $106K / $54K). Base Year 3 profit $247K, first profitable month 6 (Conservative 16), investor repaid Year 4 (1.26x), Conservative 0.57x. Break-even about 46 members, fixed costs about $20,000 a month.
+
+## Nov 13, 2026 (deck consistency pass)
+- Confirmed: the $1,200 per station software is on top of the $700 base software and billing line.
+- Whole-deck check against docs/NUMBERS.md: all numbers on slides 6, 9-13 match. Cover now says "Performance Club" (was "Hub"). Slide 5 no longer says "state-of-the-art" or "structured" testing.

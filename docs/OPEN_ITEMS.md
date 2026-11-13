@@ -13,7 +13,7 @@
 - Verify Choo Choo details and the $229 simulator price locally; validate the $250 testing price and the "$487 separately" comparison.
 - Market-size estimate (about 30,000 on-course golfers in Hamilton County) uses national rates; refine if data allows.
 - Review slides 13 (ask) and 14 (next steps) with Jeremy.
-- Cover slide: "18 Golf Performance Hub" vs "Club" (pick one); remove "Working draft · Opening target Oct/Nov 2027" once dates are firm.
+- Cover slide: remove "Working draft · Opening target Oct/Nov 2027" once dates are firm.
 - Slide 3 italic line ("Built by an expert in health and human performance...") is a rough draft.
 - Visually check dense slides (2 to 6, 9, 11) for text overflow after any edit.
 - Update the older business plan documents (see RESOURCES.md) to the current model.
