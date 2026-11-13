@@ -61,3 +61,6 @@
 ## Nov 13, 2026 (deck consistency pass)
 - Confirmed: the $1,200 per station software is on top of the $700 base software and billing line.
 - Whole-deck check against docs/NUMBERS.md: all numbers on slides 6, 9-13 match. Cover now says "Performance Club" (was "Hub"). Slide 5 no longer says "state-of-the-art" or "structured" testing.
+
+## Nov 13, 2026 (opening date)
+- No opening date is stated anywhere in the deck or kit; the date is not confirmed. Re-add only once it is firm.
