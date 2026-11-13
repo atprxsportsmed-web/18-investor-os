@@ -53,3 +53,7 @@
 ## Nov 11, 2026 (Tonal quote)
 - Tonal 2 quote received (Hannah Rosa, valid to 12/31/2026). Chosen: 5-year service term. Per unit: $4,685 equipment and delivery plus $1,445 a year service. Due at signing $6,130 per unit ($18,390 for 3); then $1,445 per unit a year for years 2 to 5 ($4,335 a year for 3, spread monthly in Assumptions B41). Five-year cost per unit $11,910, $35,730 for 3, against the earlier $33K estimate. Taxes not included.
 - Gym floor is now $40,390 at opening (was $55K). Result: Base needs $390K, Conservative $437K, Base Year 3 profit $253K, first profitable month 6 (Conservative 16), investor repaid Year 4 (1.27x), break-even about 45 members.
+
+## Nov 13, 2026 (hitting-station software)
+- Software subscription is $1,200 a year per hitting station, 5 stations = $6,000 a year ($500 a month), added to monthly operating costs (Assumptions B41 = $700 base software and billing + $500 station software + Tonal service). The $700 base may already include some launch-monitor software; if so this double counts and is conservative. Confirm the breakdown.
+- Result: Base needs $394K, Conservative $446K (the raise still covers both; buffer $106K / $54K). Base Year 3 profit $247K, first profitable month 6 (Conservative 16), investor repaid Year 4 (1.26x), Conservative 0.57x. Break-even about 46 members, fixed costs about $20,000 a month.

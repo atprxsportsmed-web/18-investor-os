@@ -28,3 +28,4 @@
 - Churn: 5% per quarter is the Base assumption; the 6%/4% spread and the winter sign-up factors are placeholders. Replace with real renewal data after the first quarterly retest.
 - Key person term life insurance on Jeremy, owned by the business: get a quote (coverage amount and term to be set). Premium is not in the model; add it as a monthly cost once quoted.
 - Tonal: the quote is priced for 1 unit; the $500 per-unit volume discount is confirmed and already in the model for 3 units; ask Tonal for a 3-unit written quote, ask what the extra discount at 5+ units is (we plan 3), confirm sales tax (excluded from the quote), and sign before 12/31/2026 or get the quote extended. The model charges the years 2 to 5 service from month 1 of opening (conservative).
+- Confirm what the $700 base software line (Assumptions B41) covers; the $1,200 per station subscription may already be partly in it (model adds it on top, conservative).
